@@ -10,12 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f1dcfa;
+    background-color: #c9aae3;
 }
 
 .card {
-    background-color: #f8eafb;
-    border: 2px solid #e169ff;
+    background-color: #edd8ff;
+    border: 2px solid #a256ff;
     border-radius: 15px;
     padding: 30px;
     margin: auto 10px;
@@ -29,7 +29,7 @@ body {
 
 h1 {
     font-size: 36px;
-    color: #c414ff;
+    color: #7519c6;
 }
 
 .noHitbox{
@@ -37,7 +37,7 @@ h1 {
 }
 
 .yes-button, .no-button {
-    background-color: #df69ff;
+    background-color: #ba5aff;
     color: white;
     border: none;
     border-radius: 10px;
@@ -50,6 +50,7 @@ h1 {
 .no-button{
     margin: 40px;
     z-index: 100;
+    animation: moveHitbox 4s linear infinite;
 }
 
 .yes-button{
@@ -57,6 +58,5 @@ h1 {
 }
 
 .yes-button:hover {
-    background-color: #d414ff;
+    background-color: #980b0b;
 }
-

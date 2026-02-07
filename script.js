@@ -14,7 +14,7 @@ yesButton.addEventListener('click', function() {
         return;
     }
     const gif = document.createElement('img');
-    gif.src = 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExejY0bncwbXRkcXFhZDN1djE1YWJ4eTAzM2U5d3JjaDZzNnkxZXNlOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hxERQNWQudqSF1iDnr/giphy.gif';
+    gif.src = 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczg4dTR1OHBoczlzempjOG43dnhxZWk3MDgxM2hrbDhndndzeHljaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tspLzBjyqz1cix8mUY/giphy.gif';
     gif.style.position = 'relative';
     document.getElementsByClassName("card")[0].appendChild(gif);
     noButton.style.display = 'none';
@@ -42,7 +42,8 @@ if (hitbox) {
         const randomY = Math.max(Math.floor(Math.random() * maxY), 20);
         hitbox.style.position = 'absolute';
         hitbox.style.left = randomX + 'px';
-        hitbox.style.top = randomY + 'px';
+        hitbox.style.top = randomY + 'px'; 
+        noButton.textContent = "No - " + messages[Math.floor(Math.random() * messages.length)];
     });
 }
 
