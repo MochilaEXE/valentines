@@ -2,61 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: cursive, sans-serif;
 }
 
-body {
+body{
+    background-image: radial-gradient(#fd5656 ,#ff8aeb 50%, #bf8aff);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #c9aae3;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.card {
-    background-color: #edd8ff;
-    border: 2px solid #a256ff;
-    border-radius: 15px;
-    padding: 30px;
-    margin: auto 10px;
+.container{
+    pointer-events: none;
+    user-select: none;
+    background-color: #f9e9d3;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    max-width: 90vw;
+    aspect-ratio: 16/9;
+    align-content: center;
+    position: relative;
 }
 
-h1 {
-    font-size: 36px;
-    color: #7519c6;
+.heart{
+    position: absolute;
+    top: 0;
+    aspect-ratio: 1.23/1;
+    width: 20%;
 }
 
-.noHitbox{
-    width: fit-content;
+.heart:nth-child(1){
+    left: 0;
+    transform: translate(-40%, -40%) rotate(-45deg);
 }
 
-.yes-button, .no-button {
-    background-color: #ba5aff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    margin-left: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.heart:nth-child(2){
+    right: 0;   
+    transform: translate(40%, -40%) rotate(45deg);
 }
 
-.no-button{
-    margin: 40px;
-    z-index: 100;
-    animation: moveHitbox 4s linear infinite;
+h1{
+    pointer-events: none;
+    color: #830d3e;
+    margin-bottom: 60px;
+    font-size: 3.5em;
 }
 
-.yes-button{
-    font-size: 4em;
+p{
+    pointer-events: none;
+    color: #830d3e;
+    font-size: 2em;
 }
 
-.yes-button:hover {
-    background-color: #980b0b;
+.whatsmylove{
+    font-size: 2.5em;
+}
+
+@keyframes rotation1 {
+    0%{
+        transform: translate(-40%, -40%) rotate(-45deg);
+    }
+    100%{
+        transform: translate(-40%, -40%) rotate(315deg);
+    }
+}
+
+@keyframes rotation2 {
+    0%{
+        transform: translate(40%, -40%) rotate(45deg);
+    }
+    100%{
+        transform: translate(40%, -40%) rotate(-315deg);
+    }
 }
