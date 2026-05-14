@@ -14,7 +14,7 @@ yesButton.addEventListener('click', function() {
         return;
     }
     const gif = document.createElement('img');
-    gif.src = 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczg4dTR1OHBoczlzempjOG43dnhxZWk3MDgxM2hrbDhndndzeHljaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tspLzBjyqz1cix8mUY/giphy.gif';
+    gif.src = 'https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydDdzOTF4djhrYjlyY2I3eDZ4ZGt4emN0cnkwdW41enpxeGJhY2dpdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fUQ4rhUZJYiQsas6WD/giphy.gif';
     gif.style.position = 'relative';
     document.getElementsByClassName("card")[0].appendChild(gif);
     noButton.style.display = 'none';
